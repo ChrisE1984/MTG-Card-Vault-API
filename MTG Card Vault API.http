@@ -1,0 +1,10 @@
+@MTG_Card_Vault_API_HostAddress = http://localhost:5095
+
+GET {{MTG_Card_Vault_API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+### Get cards owned from a set
+GET {{MTG_Card_Vault_API_HostAddress}}/api/cards/Set/ELD
+Accept: application/json
