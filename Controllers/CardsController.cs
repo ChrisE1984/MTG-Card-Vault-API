@@ -43,7 +43,7 @@ namespace MTG_Card_Vault_API.Controllers
 
             if(created is null)
             {
-                return BadRequest("No listing created. You did not add a listing that followed the required conventions.");
+                return BadRequest("No listing created. You did not add a listing that followed the required conventions or a card already exists.");
             }
 
             return CreatedAtAction(nameof(GetById), new { id = createdId }, created);
